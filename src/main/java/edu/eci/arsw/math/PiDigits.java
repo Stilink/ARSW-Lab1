@@ -29,14 +29,17 @@ public class PiDigits {
         /* Variables temporales para el funcionamiento del metodo.*/
         int part = 0;
         PiThread threadTemp;
-        for (int i = 1; i < nThreads + 1; i++) {
+        for (int i = 1; i < nThreads+1; i++) {
             part = (start) + ((i-1) * (count / nThreads));
             threadTemp = new PiThread(part, count / nThreads);
             threads.add(threadTemp);
             threadTemp.start();
         }
-        threadTemp = new PiThread(part, count % nThreads);
+        /*Problematico hilo final.
+         */
+        threadTemp = new PiThread((start)+(nThreads)*(count/nThreads), count % nThreads);
         threads.add(threadTemp);
+        threadTemp.start();
         int index=0;
         for (PiThread piThread : threads) {
             try {
