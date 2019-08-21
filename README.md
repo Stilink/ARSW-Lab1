@@ -5,3 +5,6 @@
 * How does the output change? Why?
 
 La salida altera su orden, pues al ejercutarse con Start() java de fondo genera los hilos independientes permitiendo la "ejecución en paralelo". Mientras que al usar Run(), no se generan nuevos hilos, lo cual causa una "programación secuencial".
+
+
+* Graph Time vs N threads
