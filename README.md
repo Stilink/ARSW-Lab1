@@ -8,3 +8,4 @@ La salida altera su orden, pues al ejercutarse con Start() java de fondo genera 
 
 ### Part 3
 * Graph Time vs N threads
+15+1+
