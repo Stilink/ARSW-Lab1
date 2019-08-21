@@ -9,4 +9,6 @@ La salida altera su orden, pues al ejercutarse con Start() java de fondo genera 
 ### Part 3
 * Graph Time vs N threads
 
-*![alt text](https://github.com/Stilink/ARSW-Lab1-Part1/blob/master/img/100000VS200.png)
+![alt text](https://github.com/Stilink/ARSW-Lab1-Part1/blob/master/img/100000VS200.png)
+
+![alt text](https://github.com/Stilink/ARSW-Lab1-Part1/blob/master/img/100000VS500.png)
